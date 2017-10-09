@@ -1,52 +1,55 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <title>Ping Pong</title>
   </head>
   <body>
-    <form id="ping-pong-form">
-      <label for="goal">Enter a number:</label>
-      <input id="goal" type="number">
-      <button type="submit">Submit</button>
-    </form>
+    <div class="container">
+      <form id="ping-pong-form">
+        <label for="goal">Enter a number:</label>
+        <input id="goal" type="number">
+        <button class= "btn btn-primary" type="submit">Submit</button>
+      </form>
 
-    <form id="signup">
-      <label for="email">Enter your email:</label>
-      <input id="email" type="text">
-      <button type="submit">Submit</button>
-    </form>
+      <form id="signup">
+        <label for="email">Enter your email:</label>
+        <input id="email" type="text">
+        <button class= "btn btn-primary" type="submit">Submit</button>
+      </form>
 
-    <form id="addnumbers">
-      <label for="add">Enter your numbers to add</label>
-      <input id="add" type="number">
-      <input id="add2" type="number">
-      <button type="submit">Submit</button>
-    </form>
+      <form id="addnumbers">
+        <label for="add">Enter your numbers to add</label>
+        <input id="add" type="number">
+        <input id="add2" type="number">
+        <button class= "btn btn-primary" type="submit">Submit</button>
+      </form>
 
-    <form id="subtractnumbers">
-      <label for="sub">Enter your numbers to subtract</label>
-      <input id="sub" type="number">
-      <input id="sub2" type="number">
-      <button type="submit">Submit</button>
-    </form>
+      <form id="subtractnumbers">
+        <label for="sub">Enter your numbers to subtract</label>
+        <input id="sub" type="number">
+        <input id="sub2" type="number">
+        <button class= "btn btn-primary" type="submit">Submit</button>
+      </form>
 
-    <form id="multiplynumbers">
-      <label for="mul">Enter your numbers to multiply</label>
-      <input id="mul1" type="number">
-      <input id="mul2" type="number">
-      <button type="submit">Submit</button>
-    </form>
+      <form id="multiplynumbers">
+        <label for="mul">Enter your numbers to multiply</label>
+        <input id="mul1" type="integer">
+        <input id="mul2" type="integer">
+        <button class= "btn btn-primary" type="submit">Submit</button>
+      </form>
 
-    <form id="dividenumbers">
-      <label for="div">Enter your numbers to divide</label>
-      <input id="div1" type="number">
-      <input id="div2" type="number">
-      <button type="submit">Submit</button>
-    </form>
+      <form id="dividenumbers">
+        <label for="div">Enter your numbers to divide</label>
+        <input id="div1" type="number">
+        <input id="div2" type="number">
+        <button class= "btn btn-primary" type="submit">Submit</button>
+      </form>
 
-
-    <ul id="solution"></ul>
+      <ul id="solution"></ul>
+    </div>
   </body>
 </html>
