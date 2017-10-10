@@ -8,7 +8,6 @@ var calculator;
     calculator = new Calculator("red");
   });
 
-
   it('should test whether a Calculator has a color', function() {
     //Test content will go here.
     var calculator = new Calculator();
@@ -31,4 +30,13 @@ var calculator;
     expect(calculator.pingPong(5)).toEqual([1, 2, 'ping',4,'pong']);
   });
 
+  it('should test whether a Calculator can multiply two numbers', function() {
+    //Test content will go here.
+    expect(calculator.multiply(5,3)).toEqual(15);
+  });
+
+  it('should test whether a Calculator can divide two numbers', function() {
+    //Test content will go here.
+    expect(calculator.divide(15,5)).toEqual(3);
+  });
 });
